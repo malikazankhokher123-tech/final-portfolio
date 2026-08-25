@@ -4,11 +4,11 @@ const Navbar = () => {
   const [menu, setMenu] = useState(false);
 
   const links = [
-    { no: "01", name: "Home", id: "home" },
-    { no: "02", name: "About", id: "about" },
-    { no: "03", name: "Skills", id: "skills" },
-    { no: "04", name: "Services", id: "services" },
-    { no: "05", name: "Projects", id: "projects" },
+    { name: "Home", id: "home" },
+    { name: "About", id: "about" },
+    { name: "Skills", id: "skills" },
+    { name: "Services", id: "services" },
+    { name: "Projects", id: "projects" },
   ];
 
   return (
@@ -44,7 +44,7 @@ const Navbar = () => {
           {/* DESKTOP / LARGE TABLET NAV */}
           <div className="hidden items-center gap-1 rounded-2xl border border-slate-200 bg-slate-50/80 p-1 lg:flex">
 
-            {links.map((link, index) => (
+            {links.map((link) => (
               <a
                 key={link.name}
                 href={`#${link.id}`}
@@ -56,18 +56,9 @@ const Navbar = () => {
 
                 <span className="relative flex items-center gap-1.5 xl:gap-2">
 
-                  <span className="font-mono text-[8px] text-[#0EBEC0] transition duration-300 group-hover:text-white xl:text-[9px]">
-                    {link.no}
-                  </span>
-
                   <span className="text-[11px] text-slate-500 transition duration-300 group-hover:text-white xl:text-[13px]">
                     {link.name}
                   </span>
-
-                  {/* ACTIVE DOT */}
-                  {index === 0 && (
-                    <span className="h-1.5 w-1.5 rounded-full bg-[#0EBEC0] shadow-[0_0_10px_rgba(14,190,192,0.8)] transition duration-300 group-hover:bg-white" />
-                  )}
 
                 </span>
 
@@ -131,10 +122,6 @@ const Navbar = () => {
               >
 
                 <div className="relative z-10 flex items-center gap-3 sm:gap-4">
-
-                  <span className="font-mono text-[9px] text-[#0EBEC0] transition duration-300 group-hover:text-white sm:text-[10px]">
-                    {link.no}
-                  </span>
 
                   <span className="text-sm text-slate-600 transition duration-300 group-hover:text-white sm:text-[15px]">
                     {link.name}
