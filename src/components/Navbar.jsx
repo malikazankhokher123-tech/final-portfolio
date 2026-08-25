@@ -24,18 +24,18 @@ const Navbar = () => {
             className="group flex min-w-0 items-center gap-2.5 sm:gap-3"
           >
             <div className="relative flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-[#0EBEC0] text-base font-black text-white shadow-[0_8px_22px_rgba(14,190,192,0.28)] transition-all duration-300 group-hover:-translate-y-1 group-hover:bg-[#0aa9ab] group-hover:shadow-[0_12px_30px_rgba(14,190,192,0.40)] sm:h-10 sm:w-10 sm:rounded-xl sm:text-lg md:h-11 md:w-11">
-
               A
 
               <span className="absolute bottom-1 right-1 h-2 w-2 rounded-full bg-white transition duration-300 group-hover:bg-slate-900 sm:h-2.5 sm:w-2.5" />
             </div>
 
-            <div className="hidden xs:block sm:block">
+            {/* AZAN + FULL STACK */}
+            <div className="block min-w-0">
               <h1 className="text-xs font-bold tracking-[0.18em] text-slate-900 transition duration-300 group-hover:text-[#0EBEC0] sm:text-sm sm:tracking-[0.22em]">
                 AZAN
               </h1>
 
-              <p className="mt-0.5 text-[7px] tracking-[0.22em] text-slate-400 sm:mt-1 sm:text-[8px] sm:tracking-[0.28em]">
+              <p className="mt-0.5 whitespace-nowrap text-[7px] tracking-[0.22em] text-slate-400 sm:mt-1 sm:text-[8px] sm:tracking-[0.28em]">
                 FULL STACK
               </p>
             </div>
@@ -55,11 +55,9 @@ const Navbar = () => {
                 <span className="absolute inset-0 rounded-xl bg-[#0EBEC0] opacity-0 transition-all duration-300 group-hover:opacity-100" />
 
                 <span className="relative flex items-center gap-1.5 xl:gap-2">
-
                   <span className="text-[11px] text-slate-500 transition duration-300 group-hover:text-white xl:text-[13px]">
                     {link.name}
                   </span>
-
                 </span>
 
                 {/* HOVER LINE */}
@@ -122,11 +120,9 @@ const Navbar = () => {
               >
 
                 <div className="relative z-10 flex items-center gap-3 sm:gap-4">
-
                   <span className="text-sm text-slate-600 transition duration-300 group-hover:text-white sm:text-[15px]">
                     {link.name}
                   </span>
-
                 </div>
 
                 <span className="relative z-10 text-slate-400 transition-all duration-300 group-hover:translate-x-1 group-hover:text-white">
